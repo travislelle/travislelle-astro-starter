@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Qabalah Warrior — Advanced Starter</title>
     <style>
-      html, body, #game { height: 100%; margin: 0; background: #0d0f14; }
-      #overlay {
-        position: fixed; inset: 0; pointer-events: none; display: flex; align-items: flex-end; justify-content: space-between; padding: 16px;
+        html, body { height: 100%; margin: 0; background: #0d0f14; overflow: hidden; }
+        #game { position: fixed; inset: 0; }                 /* <- important change */
+        canvas { display: block; width: 100% !important; height: 100% !important; }  /* helps some mobile browsers */
+
+        /* keep your existing overlay styles */
+        #overlay { position: fixed; inset: 0; pointer-events: none; display: flex; 
+        align-items: flex-end; justify-content: space-between; padding: 16px;
       }
       .btn {
         pointer-events: auto;
