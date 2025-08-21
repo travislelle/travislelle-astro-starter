@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Travis Lelle — Personal Landing">
+  <section class="hero">
+    <div>
+      <h1>Hello, I'm Travis (“Nova”).</h1>
+      <p class="muted">Cybersecurity engineer, anime & tech enjoyer. This is my tiny corner of the web — thoughts, experiments, and a minigame.</p>
+      <div class="buttons">
+        <a class="btn" href="/blog">Read the mini‑blog</a>
+        <a class="btn" href="/fun">Play the minigame</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Support the site</h3>
+      <p>These are affiliate links — if you sign up, I may earn a commission.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.coinbase.com/join/your-affiliate-id" rel="sponsored noopener" target="_blank">Coinbase</a>
+        <a class="btn" href="https://join.robinhood.com/your-affiliate-id" rel="sponsored noopener" target="_blank">Robinhood</a>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:24px" class="grid">
+    <div class="card">
+      <h3>Latest posts</h3>
+      <ul class="post-list">
+        <li><a href="/blog/hello-world">Hello, world</a> <span class="tag">intro</span></li>
+        <li><a href="/blog/why-astro">Why I picked Astro</a> <span class="tag">webdev</span></li>
+        <li><a href="/blog/cyber-mini">A tiny cyber tip</a> <span class="tag">security</span></li>
+      </ul>
+      <p><a href="/blog">See all posts →</a></p>
+    </div>
+    <div class="card">
+      <h3>Fun Zone</h3>
+      <p>Jump into a quick canvas game made with vanilla JS.</p>
+      <p><a class="btn" href="/fun">Play now</a></p>
+    </div>
+    <div class="card">
+      <h3>About Me</h3>
+      <p>Father • Cybersecurity • Splunk enjoyer • Building odd ideas at <a href="/about">About</a>.</p>
+    </div>
+  </section>
+</Layout>

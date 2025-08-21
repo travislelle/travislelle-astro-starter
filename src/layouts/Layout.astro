@@ -1,0 +1,31 @@
+---
+const { title = "Travis Lelle", description = "Cyber, tech, and bits of life" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>{title}</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div><a href="/" style="font-weight:800;font-size:18px">Travis Lelle</a></div>
+      <nav>
+        <a href="/blog">Blog</a>
+        <a href="/fun">Fun Zone</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <slot />
+    <footer>
+      <div>© {new Date().getFullYear()} Travis Lelle • Built with Astro • Hosted on Netlify</div>
+      <div class="muted">Affiliate disclosure: Links to Coinbase/Robinhood may earn me a commission.</div>
+    </footer>
+  </div>
+</body>
+</html>
