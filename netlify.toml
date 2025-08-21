@@ -1,3 +1,13 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/qabalah-warrior"
+  to = "/qabalah-warrior/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/qabalah-warrior/*"
+  to = "/qabalah-warrior/:splat"
+  status = 200
