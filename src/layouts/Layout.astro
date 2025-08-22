@@ -1,5 +1,5 @@
 ---
-const { title = "Travis Lelle", description = "Cyber, tech, and bits of life" } = Astro.props;
+const { title = "Travis Lelle", description = "Cyber, tech, and bits of wisdom" } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -17,15 +17,14 @@ const { title = "Travis Lelle", description = "Cyber, tech, and bits of life" } 
       <nav>
         <a href="/blog">Blog</a>
         <a href="/fun">Fun Zone</a>
-	<a href="/qabalah-warrior">Qabalah Warrior</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
       </nav>
     </header>
     <slot />
     <footer>
-      <div>© {new Date().getFullYear()} Travis Lelle • Built with Astro • Hosted on Netlify</div>
-      <div class="muted">Affiliate disclosure: Links to Coinbase/Robinhood may earn me a commission.</div>
+      <div>© {new Date().getFullYear()} Travis Lelle • Hosted on Netlify</div>
+      <div class="muted">Affiliate disclosure: Links to Coinbase/Robinhood may earn me a commission. (I'm required to say this. Lame, right?)</div>
     </footer>
   </div>
 </body>
